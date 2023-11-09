@@ -1,0 +1,231 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/style_prediksi.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="../static/prediksi.js"></script>
+    
+    <title>Prediksi Harga Kost</title>
+    </head>
+
+    <body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div id="sidebar" class="sidebar">
+            <div>
+                <div class="sidebar-brand">
+                <img src="../static/aset/logolnsearch.png" alt="" width="50" height="50">
+                <a style="color: white; margin-left: 5px;">LN Search
+                </a>
+                </div>
+                <hr class="hor" style="border: 2px solid white; margin-left: -12px; width: 300px;">
+            </div>
+            
+            <div class="sidebar-isi">
+                <div>
+                <div class="side-item">
+                    <a class="link active" href="/indo" style="color: white;">Beranda</a>
+                </div>
+                <div class="side-item" style="margin-top: 5px;">
+                    <a class="restart" href="#" style="color: white; text-decoration: none;">Atur Ulang</a>
+                </div>
+                </div>
+                <div>
+                <div style="color :white">Hubungi Kami</div>
+                <div style="color: white;">+62 852-6026-9861</div>
+                <div style="color: white;"><a href="mailto:fauzanhidayat773@gmail.com" class="social"><i class="fa-solid fa-envelope"></i></a>louders260704@gmail.com </div>
+                <div style="color: white;"><a href="mailto:fauzanhidayat773@gmail.com" class="social"><i class="fa-solid fa-envelope"></i></a>fauzanhidayat773@gmail.com </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- header -->
+            <section id="header" class="header">
+            <button id="showSidebarButton" class="showSidebarButton">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div style="color: black; text-align:center">Prediksi Harga Kost</div>
+            
+            </section>
+        
+            <!-- content -->
+            <div class="container">
+
+            <!-- content input -->
+            <section id="content" class="content">
+                <div id="content-isi" class="content-isi">
+
+                <!-- lokasi kost -->
+                <div class="lokasi">
+                    <div id="lokasi-kost" class="lokasi-kost">
+                    <label for="lokasi" class="label">Lokasi Kost </label>
+                    <select id="uilocation" required>
+                        <option value="" disabled=" disabled" selected="selected">
+                            PILIH DAERAH KOS YANG ANDA MAU
+                        </option>
+                    </select>
+                    </div>      
+                </div>
+
+                
+
+                <!-- tipe kost -->
+                <div class="tipe-kost" style="padding-top: 1rem;">
+                    <label for="tipe-kost" class="label">Tipe Kost</label>
+                    <div id="tipe-kost" class="optiontipekost">
+                    <button id="campur" class="bp button-optiontipekost" value="0" type="button">
+                        <img src="../static/aset/campur.png" style="width: 1.6cm;" alt="Campur">
+                    </button>
+                    <button id="putra" class="bp button-optiontipekost" value="2" type="button">
+                        <img src="../static/aset/putra.png" style="width: 1.6cm;" alt="Putra">
+                    </button>
+                    <button id="putri" class="bp button-optiontipekost" value="1" type="button">
+                        <img src="../static/aset/putri.png" style="width: 1.6cm;" alt="Putri">
+                    </button>
+                    </div>
+                </div>
+
+                <!-- kamar mandi -->
+                <div class="kamar-mandi" style="padding-top: 1rem;">
+                    <label for="kamar-mandi" class="label">Kamar Mandi</label>
+                    <div class="optionkamarmandi">
+                    <button id="dalam" class="bp button-optionkamarmandi" value="1" type="button">
+                        <img src="../static/aset/kamarmandi-dalam.png" style="width: 1.6cm;" alt="didalam">
+                    </button>
+                    <button id="luar" class="bp button-optionkamarmandi" value="0" type="button">
+                        <img src="../static/aset/kamarmandi-luar.png" style="width: 1.6cm;" alt="diluar">
+                    </button>
+                    </div>
+                </div>
+
+                <!-- tipe kloset -->
+                <div id="tipe-kloset" style="padding-top: 1rem;">
+                    <label for="tipe-kloset" class="label">Tipe Kloset</label>
+                    <div class="optiontipekloset">
+                    <button id="duduk" class="bp button-optiontipekloset" value="1" type="button">
+                        <img src="../static/aset/kloset-duduk.png" style="width: 1.6cm;" style="width: 1.6cm"  alt="duduk">
+                    </button>
+                    <button id="jongkok" class="bp button-optiontipekloset"  value="0" type="button">
+                        <img src="../static/aset/kloset-jongkok.png" style="width: 1.6cm;" alt="jongkok">
+                    </button>
+                    </div>                
+                </div>
+
+                <!-- pendingin ruangan -->
+                <div class="pendingin-ruangan" style="padding-top: 1rem;">
+                    <label for="pendingin-ruangan" class="label">Pendingin Ruangan</label>
+                    <div class="optionpendinginruangan" >
+                    <button id="ac" class="bp button-optionpendinginruangan" value="1" type="button">
+                        <img src="../static/aset/ac.png" style="width: 1.6cm;" alt="sediapendingin ruangan">
+                    </button>
+                    <button id="no-ac" class="bp button-optionpendinginruangan" value="0" type="button">
+                        <img src="../static/aset/no-ac.png" style="width: 1.6cm;" alt="tanpa pendingin ruangan">
+                    </button>
+                    </div>                
+                </div>
+                </div>
+            </section>
+
+            <!-- wi-fi -->
+            <section id="content3" class="content3">
+                <div id="content3-isi" class="content3-isi">
+                <div class="wifi" style="padding-top: 1rem;">
+                    <label for="wifi" class="label">Wi-FI</label>
+                    <div class="optionwifi" >
+                    <button id="wifi" class="bp button-optionwifi" value="1" type="button">
+                        <img src="../static/aset/wifi.png" style="width: 1.6cm;" alt="wi-fi">
+                    </button>
+                    <button id="no-wifi" class="bp button-optionwifi" value="0" type="button">
+                        <img src="../static/aset/no-wifi.png" style="width: 1.6cm;" alt="no-wifi">
+                    </button>
+                    </div>                
+                </div>
+
+                <!-- kasur -->
+                <div class="fasilitas_kasur" style="padding-top: 1rem;">
+                    <label for="fasilitas_kasur" class="label">Fasilitas Kasur</label>
+                    <div class="optionkasur" >
+                    <button id="kasur" class="bp button-optionkasur" value="1" type="button">
+                        <img src="../static/aset/kasur.png" style="width: 1.6cm;" alt="sedia kasur">
+                    </button>
+                    <button id="no-kasur" class="bp button-optionkasur" value="0" type="button">
+                        <img src="../static/aset/no-kasur.png" style="width: 1.6cm;" alt="tanpa kasur">
+                    </button>
+                    </div>                
+                </div>
+                    
+                <!-- akses kost -->
+                <div class="akses-kost" style="padding-top: 1rem;">
+                    <label for="tipe" class="label">Akses Kost</label>
+                    <div class="optionakseskost" >
+                    <button id="bebas" class="bp button-optionakseskost" value="1" type="button">
+                        <img src="../static/aset/bebas.png" style="width: 1.6cm;" alt="bebas">
+                    </button>
+                    <button id="terbatas" class="bp button-optionakseskost" value="0" type="button">
+                        <img src="../static/aset/terbatas.png" style="width: 1.6cm;" alt="terbatas">
+                    </button>
+                    </div>
+                </div>  
+                </div>
+            </section>
+        
+            <!-- content confirm -->
+            <section id="content2" class="content2">
+                <div id="content2-isi" class="content2-isi">
+                <div>
+                    <table>
+                    <tr>
+                        <td style="padding-bottom: 1rem;">Lokasi Kost </td>
+                        <td style="padding-left: 5px; padding-bottom: 1rem;"> : <span id="lokasiKostConfirm">-</span></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 1rem;">Tipe Kost</td>
+                        <td style="padding-left: 5px; padding-bottom: 1rem;"> : <span id="tipeKostConfirm">-</span></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 1rem;">Kamar Mandi</td>
+                        <td style="padding-left: 5px; padding-bottom: 1rem;"> : <span id="kamarMandiConfirm">-</span></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 1rem;">Tipe Kloset</td>
+                        <td style="padding-left: 5px; padding-bottom: 1rem;"> : <span id="tipeKlosetConfirm">-</span></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 1rem;">Pendingin Ruangan</td>
+                        <td style="padding-left: 5px; padding-bottom: 1rem;"> : <span id="pendinginRuanganConfirm">-</span></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 1rem;">Wi-FI</td>
+                        <td style="padding-left: 5px; padding-bottom: 1rem;"> : <span id="wifiConfirm">-</span></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 1rem;">Kasur</td>
+                        <td style="padding-left: 5px; padding-bottom: 1rem;"> : <span id="kasurConfirm">-</span></td>
+                    </tr>
+                    <tr>
+                        <td style=" padding-bottom: 1rem;">Akses Kost</td>
+                        <td style="padding-left: 5px; padding-bottom: 1rem;"> : <span id="aksesKostConfirm">-</span></td>
+                    </tr>
+                    </table>
+                </div>      
+                <div class="prediksi" style="padding-top: 2rem;">
+                    <button class="predik-button" onclick="estimatePrice()"> Prediksi Harga</button>
+                </div>
+                <div>
+                    <h2 style="padding-top: 2rem;">Rp. <span id="hargaprediksi">-,00</span></h2>
+                </div>
+                </div>
+            </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>

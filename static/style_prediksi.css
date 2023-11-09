@@ -1,0 +1,257 @@
+    @media (max-width: 768px) {
+        #sidebar{
+        padding-top: 60px;
+        display: none;
+        max-height: 100vh;
+        padding-bottom: 15%;
+        }
+
+        #content{
+        padding-top: 4rem;
+        padding-left: 15px;
+        padding-bottom: 0%;
+        }
+
+        #content-isi{
+        padding: 0;
+        padding-bottom: 0%;
+        }
+
+        #content3-isi{
+        padding-top: 0%;
+        margin-top: 0%;
+        }
+
+        #content2{
+        padding-bottom: 4rem;
+
+        }
+        
+        #header{
+        background-color: #999999;
+        padding-left: 0%;
+        position: fixed;
+        box-shadow: 1px 2px 3px  black;
+        }
+
+        #showSidebarButton {
+        display: block;
+        position: fixed;
+        z-index: 1;
+        }
+
+        .container {
+        display: flex;
+        flex-direction: column; /
+        }
+        
+        .content, .content3, .content2 {
+        width: auto;
+        }
+    }
+
+    @media (max-width: 800px) {
+        #sidebar{
+        display: none;
+        max-height: 100vh;
+        padding-bottom: 15%;
+        }
+
+        #content{
+        padding-left: 1rem;
+
+        }
+        
+        #header{
+        padding-left: 0%;
+        }
+
+        #showSidebarButton {
+        display: block;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        #sidebar{
+        display: none;
+        max-height: 100vh;
+        padding-bottom: 15%;
+        }
+
+        #content{
+        padding-left: 1rem;
+        }
+        
+        #header{
+        padding-left: 0%;
+        }
+
+        #showSidebarButton {
+        display: block;
+        }
+    }
+
+    body{
+        overflow-x: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-right: -1rem;
+    }
+
+    .link {
+        text-decoration: none;
+    }
+
+    .sidebar{
+        padding-top: 1rem;
+        width: 300px;
+        height: 100vh;
+        background-color: #040D12;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+    }
+
+    .sidebar-brand {
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar-isi{
+        padding-left: 8px;
+        justify-content: space-between;
+        height: 100%;
+        display: flex; 
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    .social {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        color: white;
+        border-radius: 50%;
+        background-color: transparent;
+        line-height: 30px;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .header{
+        padding-left: 300px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: transparent;
+        font-weight: bold;
+        box-shadow: 0px 1px 1px #929292;
+    }
+
+    .content {
+        flex: 3;
+        background-color: transparent;
+        box-shadow: 1px 0px px #999999;
+        padding-left: 300px;
+        padding-top: 1rem;
+        width: auto;
+        height: 100vh;
+        flex-direction: column;
+        font-weight: bold;
+    }
+
+    .content-isi{
+        padding-left: 10px;
+        padding-top: 1rem;
+    }
+
+    .content3{
+        flex: 2;
+        background-color: transparent;
+        padding-top: 1rem;
+        width: 300px; 
+        height: 100%;
+        flex-direction: column;
+        font-weight: bold;
+    }
+
+    .content3-isi{
+        padding-left: 15px;
+        padding-top: 4.52cm;
+    }
+
+    .content2{
+        flex: 3;
+        background-color: transparent;
+        padding-top: 1rem;
+        width: 350px; 
+        height: 100%;
+        flex-direction: column;
+        font-weight: bold;
+    }
+
+    .content2-isi{
+        padding-left: 15px;
+        padding-top: 1rem;
+    }
+
+    .bp{
+        width: 2cm;
+        height: 2cm;
+        margin-left: 3px;
+        border-radius: 10%;
+        justify-content: center;
+    }
+
+    .bp:active {
+        background-color: white;
+        color: #ffff; 
+    }
+
+    .bp:not(.active) {
+        background-color: #999999; 
+        color: black; 
+    }
+
+    .predik-button{
+        height: 3rem;
+        width: autos;
+        font-weight: bold;
+        background-color: #999999;
+        border: 2px solid black;
+        color: black; 
+        transition: background-color 0.3s, color 0.3s; 
+        justify-content: center; 
+        border-radius: 5%;
+    }
+
+    .button-optiontipekost,
+    .button-optionkamarmandi,
+    .button-optiontipekloset,
+    .button-optionpendinginruangan,
+    .button-optionwifi,
+    .button-optionkasur,
+    .button-optionakseskost {
+        margin-bottom: 1rem;
+    }
+
+    .showSidebarButton {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .showSidebarButton.active {
+        background-color: transparent;
+        color: white;
+    }
+
+    

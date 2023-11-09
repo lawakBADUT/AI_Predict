@@ -1,0 +1,282 @@
+    @media (max-width: 768px) {
+        #trynavbar {
+        display: none;
+        }
+    
+        #Home{
+        background-image: url('./aset/jumbotronmobile.jpg');
+        background-size: 100%;
+        }
+    
+        #jt{
+        margin-top: 5rem;
+        padding-right: 0%;
+        }
+    
+        #texthead1{
+        font-size: 25px;
+        }
+    
+        #texthead2{
+        font-size: 40px;
+        padding-right: 7%;
+        }
+    
+        #texthead3{
+        font-size: 20px;
+        padding-right: 45%;
+        text-align: left;
+        }
+    
+        #imgabout{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    
+        #img{
+        float: none;
+        width: 50%;
+        margin-bottom: 1rem;
+        }
+    
+        #button{
+        float: left;
+        }
+    
+        #texthead1{
+        font-size: none;
+        }
+    
+        #about{
+        padding: 0;
+        }
+    }
+    
+    body{
+        overflow-x: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .navbar-custom{
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        display: flex;
+        justify-content: flex-end;
+        font-weight: bold;
+    }
+    
+    .nav-link {
+        pointer-events: none;
+    }
+    
+    .nav-link:hover {
+        pointer-events: auto;
+    }
+    
+    .language-switch {
+        padding-left: 20px;
+        margin-right: 20px;
+        font-size: 10px;
+    }
+    
+    button.language {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: transparent ;
+        color: black;
+        border: none;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    
+    button.active {
+        background-color: white;
+    }
+    
+    button.try{
+        width: 3cm;
+        height: 2rem;
+        background-color: transparent;
+        border: 2px solid #93B1A6;
+        margin-left: 1cm;
+    }
+    
+    .navbar-custom.scrolled{
+        position: fixed;
+        background-color: #040D12;
+        box-shadow: 0.1px 1px 3px #93B1A6;
+    }
+    
+    .jumbotron{
+        background-image: url('./aset/jumbotron.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 15%;
+    }
+    .jumbotron-text{
+        padding-left: 7%;
+        padding-right: 35%;
+        padding-bottom: 5rem;
+        color: #93B1A6;
+        text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+        position: relative;
+    }
+    
+    .text2{
+        font-size: 60px;
+    }
+    
+    .text3{
+        font-size:22px; 
+        margin-top: 0%; 
+        margin-bottom: 3rem;
+        text-align: justify;
+    }
+    
+    .explorebutton {
+        background-color: transparent;
+        border: 2px solid #93B1A6;
+        color: #93B1A6; 
+        transition: background-color 0.3s, color 0.3s; 
+        justify-content: center; 
+        border-radius: 5%;
+    }
+    
+    .explorebutton:hover {
+        background-color: #61677A;
+        color: #93B1A6;
+        border:2px solid #93B1A6;
+    }
+    
+    .imageme{
+        padding-left: 5rem;
+    }
+    
+    .foto-kiri {
+        float: left;
+        width: 25%;
+        margin-right: 30px;
+    }
+    
+    .transisi{
+        margin-top: -5%;
+        margin-bottom: -10%;
+    }
+    
+    .about-us{
+        background-color: #93B1A6;
+        margin-bottom: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        color: #183D3D; 
+    }
+    
+    .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img{
+        width: 30%; 
+        float: left; 
+        padding-top: 5%;
+    }
+    
+    .about-text{
+        font-family: calibri; 
+        font-weight: 500;
+        font-size: 20px; 
+        padding-top: 3rem; 
+        padding-left: 7%; 
+        padding-bottom: 0%; 
+        padding-right: 7%;         
+        text-align: justify;
+    }
+    
+    .about-text2{
+        padding-left: 35%;
+    }
+    
+    .abstrak{
+        background-color: #183D3D;
+        padding-left: 0%;
+        padding-right: 0%;
+        color:#93B1A6;
+    }
+    
+    .abstrak-text{
+        font-family: calibri; 
+        font-weight: 500;
+        font-size: 20px; 
+        padding-top: 3rem; 
+        padding-left: 7%; 
+        padding-bottom: 5%; 
+        padding-right: 7%;         
+        text-align: justify;
+    }
+    
+    .our-team{  
+        background-color: #5C8374;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-bottom: 12rem;
+        color: #040D12;
+    }
+    
+    .colum-louders{
+        width: 20rem;
+        height: 20rem;
+        background-color: transparent;
+        float: left;
+        margin-bottom: 2rem;
+    }
+    
+    .colum-fauzan{
+        float: right;
+        width: 20rem;
+        height: 20rem;
+        background-color: transparent;
+        margin-bottom: 2rem;
+    }
+    
+    .social {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        color: white;
+        border-radius: 50%;
+        background-color: #040D12;
+        line-height: 30px;
+    }
+    
+    .footer{
+        background-color: #040D12;
+        padding-right: 5rem;
+    }
+    
+    .btn{
+        width: 4.5cm;
+        height: 1cm;
+        background-color: transparent;
+        border: 2px solid #93B1A6;
+        color: #93B1A6; 
+        transition: background-color 0.3s, color 0.3s; 
+        justify-content: center; 
+    }
+    
+    .sidebar{
+        width: 230px;
+        height: 100%;
+        background-color: black;
+        position: fixed;
+    }
